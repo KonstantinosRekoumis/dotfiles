@@ -1,0 +1,10 @@
+import = [
+	"~/dotfiles/alacritty/themes/themes/gruvbox-dark.toml"
+]
+
+
+[shell]
+program = "/bin/fish"
+
+[env]
+term = "xterm-256color"
