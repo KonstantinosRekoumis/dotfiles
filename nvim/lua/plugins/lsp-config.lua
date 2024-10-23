@@ -1,3 +1,10 @@
+local on_attach = function (client, bufnr)
+    if client.name == "ruff" then
+      client.server_capabilities.hoverProvider = false
+  end
+end
+  
+
 return {
   {
     "williamboman/mason.nvim",
@@ -10,7 +17,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "fortls", "ruff", "lua_ls"}})
+        ensure_installed = { "fortls", "ruff", "pyright", "lua_ls"}})
     end,
   },
   {
@@ -19,9 +26,18 @@ return {
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       local lspconfig = require("lspconfig")
-      lspconfig.lua_ls.setup({ capabilities = capabilities})
-      lspconfig.ruff.setup({capabilities = capabilities})
-      lspconfig.fortls.setup({capabilities = capabilities})
+      lspconfig.lua_ls.setup({on_attach = on_attach, capabilities = capabilities})
+      lspconfig.ruff.setup({on_attach = on_attach, capabilities = capabilities})
+      lspconfig.fortls.setup({on_attach = on_attach, capabilities = capabilities})
+      lspconfig.pyright.setup({on_attach = on_attach,
+        settings = {pyright = {disableOrganizeImports = true,},
+                    python = {analysis={
+                                ignore = {"*"}, 
+                               },
+                              },
+        },
+        capabilities = capabilities})
+
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})

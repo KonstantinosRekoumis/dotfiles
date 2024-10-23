@@ -8,3 +8,6 @@ program = "/bin/fish"
 
 [env]
 term = "xterm-256color"
+
+[font]
+normal = {family = "SauceCodePro Nerd Font Propo", style = "Regular"} 
