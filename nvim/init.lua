@@ -11,7 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.opt.termguicolors = true
+vim.o.expandtab = true
+
+
 require("vim-options")
 require("lazy").setup("plugins")
-vim.opt.termguicolors = true
 
