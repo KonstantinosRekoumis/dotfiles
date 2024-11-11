@@ -1,5 +1,8 @@
 import = [
-	"~/dotfiles/alacritty/themes/themes/gruvbox-dark.toml"
+	# "~/dotfiles/alacritty/themes/themes/argonaut.toml"
+
+	# "~/dotfiles/alacritty/themes/themes/kanagawa_wave.toml"
+	"~/dotfiles/alacritty/themes/themes/oceanic_next.toml"
 ]
 
 
@@ -7,7 +10,7 @@ import = [
 program = "/bin/fish"
 
 [env]
-term = "xterm-256color"
+term = "alaritty-direct"
 
 [font]
 normal = {family = "SauceCodePro Nerd Font Propo", style = "Regular"} 

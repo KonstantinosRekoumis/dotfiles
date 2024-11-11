@@ -15,6 +15,19 @@ vim.opt.termguicolors = true
 vim.o.expandtab = true
 
 
+-- vim.cmd.colorscheme "kanagawa"
+
+-- vim.o.background = "light"
 require("vim-options")
 require("lazy").setup("plugins")
+
+-- -- set background based on the time of day
+if os.date("*t")["hour"] >= 6 and os.date("*t")["hour"] < 20 then
+    vim.cmd.colorscheme("nordfox")
+    -- vim.o.background = "light"
+else
+    vim.cmd.colorscheme("nightfox")
+    -- vim.o.background = "dark"
+end
+
 
