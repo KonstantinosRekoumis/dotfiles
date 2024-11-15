@@ -1,5 +1,5 @@
 set fish_greeting
-source "secrets.fish"
+source '/home/kostas/dotfiles/fish/secrets.fish'
 alias lss="exa -al --color=always --group-directories-first --git --header --long --icons"
 alias treex="exa --tree --level=2 --long --git --icons"
 
