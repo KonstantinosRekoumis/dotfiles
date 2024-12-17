@@ -8,4 +8,15 @@ alias enable_oneApi='bass source /opt/intel/oneapi/setvars.sh; bass FC=mpiifx;  
 alias paraview='/home/kostas/repos/paraview_build/bin/paraview'
 alias hexpress='/home/kostas/numeca_ssq/bin/hexpress'
 #neofetch
-alias MaPInco='/home/kostas/repos/MaPFlow/build/MaPInco'
+# MaPFlow Alias for my branch
+set mapinco_p '/home/kostas/repos/MaPFlow/build/MaPInco'
+alias sMaPInco='$mapinco_p'
+alias mMaPInco='mpirun -n 6 $mapinco_p' 
+alias flow_h52cgns='/home/kostas/repos/MaPFlow/build/flow_h52cgns'
+# Usefull auxiliary alias
+set cgns_tools '/home/kostas/repos/CGNS/build/src/tools'
+alias cgns_check='$cgns_tools/cgnscheck'
+alias imgview='loupe'
+
+alias clion="~/JetBrains/clion-2024.3.1/bin/clion.sh"
+
