@@ -2,7 +2,7 @@ import = [
 	# "~/dotfiles/alacritty/themes/themes/argonaut.toml"
 
 	# "~/dotfiles/alacritty/themes/themes/kanagawa_wave.toml"
-	"~/dotfiles/alacritty/themes/themes/oceanic_next.toml"
+	"~/repos/dotfiles/alacritty/themes/themes/oceanic_next.toml"
 ]
 
 
@@ -13,4 +13,4 @@ program = "/bin/fish"
 term = "alaritty-direct"
 
 [font]
-normal = {family = "SauceCodePro Nerd Font Propo", style = "Regular"} 
+# normal = {family = "SauceCodePro Nerd Font Propo", style = "Regular"} 

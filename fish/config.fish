@@ -1,5 +1,5 @@
 set fish_greeting
-source '/home/kostas/dotfiles/fish/secrets.fish'
+source '/home/kostas/repos/dotfiles/fish/secrets.fish'
 alias lss="exa -al --color=always --group-directories-first --git --header --long --icons"
 alias treex="exa --tree --level=2 --long --git --icons"
 
@@ -19,4 +19,4 @@ alias cgns_check='$cgns_tools/cgnscheck'
 alias imgview='loupe'
 
 alias clion="~/JetBrains/clion-2024.3.1/bin/clion.sh"
-
+alias pstow="~/repos/pstow/pstow.py"
