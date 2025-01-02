@@ -1,4 +1,6 @@
 set fish_greeting
+set EDITOR 'nvim'
+set VISUAL 'nvim'
 source '/home/kostas/repos/dotfiles/fish/secrets.fish'
 alias lss="exa -al --color=always --group-directories-first --git --header --long --icons"
 alias treex="exa --tree --level=2 --long --git --icons"

@@ -1,0 +1,8 @@
+# theme  = Kanagawa Wave
+# theme = Desert 
+# theme = Everforest Dark - Hard
+theme = Firewatch
+
+command = fish
+
+background-opacity = 0.90

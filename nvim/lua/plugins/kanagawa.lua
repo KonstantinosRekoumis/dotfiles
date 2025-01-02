@@ -1,13 +1,16 @@
 return {
-  "rebelot/kanagawa.nvim",
-  lazy = false,
-  name = "kanagawa",
-  priority = 1001,
-  config = function()
-    vim.cmd.colorscheme "kanagawa-wave"  --default
---    vim.cmd.colorscheme "kanagawa-dragon" --dark
+	"rebelot/kanagawa.nvim",
+	lazy = false,
+	name = "kanagawa",
+	priority = 1001,
+	config = function()
+		require("kanagawa").setup({
 
---    vim.cmd.colorscheme "kanagawa-lotus"  --light
+			transparent = true,
+		})
+		-- vim.cmd.colorscheme "kanagawa-wave"  --default
+		--    vim.cmd.colorscheme "kanagawa-dragon" --dark
 
-  end
+		--    vim.cmd.colorscheme "kanagawa-lotus"  --light
+	end,
 }

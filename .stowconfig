@@ -8,5 +8,5 @@ tmux.conf ::: ./tmux/
 tmux_reset ::: ./tmux/
 .bashrc ::: ../
 .gitconfig ::: ../
-./firefox/* ::: ../.mozilla/firefox/*.default-release/chrome/
+./firefox/* ::: ../.mozilla/firefox/*default-release/chrome/
 
