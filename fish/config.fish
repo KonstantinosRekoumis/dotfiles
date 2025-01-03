@@ -1,6 +1,8 @@
 set fish_greeting
 set EDITOR 'nvim'
 set VISUAL 'nvim'
+set EDITOR nvim
+set VISUAL nvim
 source '/home/kostas/repos/dotfiles/fish/secrets.fish'
 alias lss="exa -al --color=always --group-directories-first --git --header --long --icons"
 alias treex="exa --tree --level=2 --long --git --icons"
@@ -19,6 +21,10 @@ alias flow_h52cgns='/home/kostas/repos/MaPFlow/build/flow_h52cgns'
 set cgns_tools '/home/kostas/repos/CGNS/build/src/tools'
 alias cgns_check='$cgns_tools/cgnscheck'
 alias imgview='loupe'
+
+#abbr
+
+abbr rsyncc 'rsync -vzah'
 
 alias clion="~/JetBrains/clion-2024.3.1/bin/clion.sh"
 alias pstow="~/repos/pstow/pstow.py"
