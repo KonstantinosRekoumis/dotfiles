@@ -1,8 +1,8 @@
 set fish_greeting
 set EDITOR 'nvim'
 set VISUAL 'nvim'
-set EDITOR nvim
-set VISUAL nvim
+set N_CORES '8' 
+
 source '/home/kostas/repos/dotfiles/fish/secrets.fish'
 alias lss="exa -al --color=always --group-directories-first --git --header --long --icons"
 alias treex="exa --tree --level=2 --long --git --icons"
@@ -15,7 +15,7 @@ alias hexpress='/home/kostas/numeca_ssq/bin/hexpress'
 # MaPFlow Alias for my branch
 set mapinco_p '/home/kostas/repos/MaPFlow/build/MaPInco'
 alias sMaPInco='$mapinco_p'
-alias mMaPInco='mpirun -n 6 $mapinco_p' 
+alias mMaPInco='mpirun -n $N_CORES  $mapinco_p' 
 alias flow_h52cgns='/home/kostas/repos/MaPFlow/build/flow_h52cgns'
 # Usefull auxiliary alias
 set cgns_tools '/home/kostas/repos/CGNS/build/src/tools'

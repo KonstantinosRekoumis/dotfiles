@@ -1,8 +1,13 @@
 # theme  = Kanagawa Wave
 # theme = Desert 
 # theme = Everforest Dark - Hard
-theme = Firewatch
+# theme = Firewatch
+theme = terafox
 
 command = fish
 
 background-opacity = 0.90
+cursor-style = bar
+gtk-titlebar = false
+linux-cgroup = always
+confirm-close-surface=false
