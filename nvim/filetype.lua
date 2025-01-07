@@ -1,6 +1,7 @@
 vim.filetype.add({
     extension = {
         tcss = "css",
-        nml = "fortran"
+        nml = "fortran",
+        service = "toml"
     }
 })
