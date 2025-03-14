@@ -25,7 +25,7 @@ def main(mode: Literal["day", "night"] = "night"):
 
     modes = {
         "day": {"ghostty": "dawnfox", "nvim": "dawnfox"},
-        "night": {"ghostty": "terafox", "nvim": "nightfox"},
+        "night": {"ghostty": "terafox", "nvim": "duskfox"},
     }
 
     

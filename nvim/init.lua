@@ -29,4 +29,4 @@ else
 	vim.cmd.colorscheme("nightfox")
 	-- vim.o.background = "dark"
 end
-
+vim.cmd.colorscheme("duskfox")

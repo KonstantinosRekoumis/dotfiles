@@ -1,13 +1,19 @@
 # theme  = Kanagawa Wave
-# theme = Desert 
+# theme = Desert
 # theme = Everforest Dark - Hard
 # theme = Firewatch
 theme = terafox
+# theme = dawnfox
 
 command = fish
 
 background-opacity = 0.90
 cursor-style = bar
+window-inherit-font-size = true
+font-size = 14
 gtk-titlebar = false
 linux-cgroup = always
-confirm-close-surface=false
+confirm-close-surface = true
+
+theme = dawnfox
+theme = terafox
