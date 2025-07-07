@@ -8,6 +8,8 @@ alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
 
+abbr less less -RS
+
 if type -q hx
     abbr --position command --add helix hx
     set -gx VISUAL hx
@@ -31,15 +33,18 @@ set N_CORES '8'
 set __lss exa -al --color=always --group-directories-first --git --header --long --icons
 set __tree exa --tree --level=2 --long --git --icons
 
-source '/home/kostas/repos/dotfiles/fish/secrets.fish'
+source "$HOME/.config/fish/secrets.fish"
+source "$HOME/.config/fish/functions/python_alias.fish"
+
 alias lss='$__lss'
+alias lsz='$__lss --total-size'
 abbr lsd $__lss
 alias treex='$__tree'
 abbr treed $__tree
 
 alias enable_oneApi='bass source /opt/intel/oneapi/setvars.sh; bass FC=mpiifx;  bass CC=mpiicx; bass CXX=mpiicx; bass I_MPI_F90=ifx; bass I_MPI_CC=icx; bass I_MPI_CXX=icx'
 
-alias paraview='/home/kostas/repos/paraview_build/bin/paraview'
+alias paraview='/home/kostas/repos/paraview_build/bin/paraview --venv /home/kostas/python_envs/paraview_python'
 alias hexpress='/home/kostas/numeca_ssq/bin/hexpress'
 #neofetch
 # MaPFlow Alias for my branch
@@ -47,12 +52,18 @@ set mapinco_p '/home/kostas/repos/MaPFlow/build/MaPInco'
 alias sMaPInco='$mapinco_p'
 alias mMaPInco='mpirun -n $N_CORES  $mapinco_p' 
 alias flow_h52cgns='/home/kostas/repos/MaPFlow/build/flow_h52cgns'
+# MaPFlow Alias for dev branch
+set mapinco_p_dev '/home/kostas/repos/MaPFlow_dev/build/MaPInco'
+alias sMaPInco_dev='$mapinco_p_dev'
+alias mMaPInco_dev='mpirun -n $N_CORES  $mapinco_p_dev' 
+alias flow_h52cgns_dev='/home/kostas/repos/MaPFlow_dev/build/flow_h52cgns'
 # Usefull auxiliary alias
 set cgns_tools '/home/kostas/repos/CGNS/build/src/tools'
 alias cgns_check='$cgns_tools/cgnscheck'
 alias imgview='loupe'
 
-#abbr
+abbr diff 'diff --color="always" -r'
+abbr c_g_cm 'git commit -m "$(date  +%y-%m-%dT%H-%M)_$(whoami)@$(hostname)"'
 
 abbr rsyncc 'rsync -vzah'
 

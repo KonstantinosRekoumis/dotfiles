@@ -16,4 +16,4 @@ linux-cgroup = always
 confirm-close-surface = true
 
 theme = dawnfox
-theme = terafox
+theme = terafox 
