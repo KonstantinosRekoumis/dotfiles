@@ -19,5 +19,5 @@ return {
 			},
 		})
 		-- vim.keymap.set('n', '<leader>fm', vim.lsp.buf.format, {})
-	end,
+	end
 }

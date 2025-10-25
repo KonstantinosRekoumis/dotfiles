@@ -58,6 +58,7 @@ return {
 					python = {
 						analysis = {
 							ignore = { "*" },
+                            typeCheckingMode = "off",
 						},
 					},
 					-- venv = function()

@@ -5,7 +5,7 @@ vim.cmd("set nowrap")
 vim.cmd("set clipboard+=unnamedplus")
 -- vim.cmd("set t_Co=16")
 vim.g.mapleader = " "
-
+vim.diagnostic.config({ virtual_text = true }) -- Neovim 0.11 Change
 vim.opt.swapfile = false
 
 -- Navigate vim panes better

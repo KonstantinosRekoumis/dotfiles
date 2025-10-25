@@ -7,13 +7,30 @@ theme = terafox
 
 command = fish
 
+keybind = ctrl+shift+H=goto_split:left
+keybind = ctrl+shift+L=goto_split:right
+keybind = ctrl+shift+J=goto_split:down
+keybind = ctrl+shift+K=goto_split:up
+
+
+
 background-opacity = 0.90
 cursor-style = bar
 window-inherit-font-size = true
+window-height = 40
+window-width = 100
 font-size = 14
 gtk-titlebar = false
+gtk-single-instance = false
 linux-cgroup = always
 confirm-close-surface = true
 
 theme = dawnfox
-theme = terafox 
+theme = Material Design Colors
+
+theme = Terafox
+theme = Japanesque
+#Ultra dim light viable
+#theme = Black Metal (Bathory)
+
+theme = Material Design Colors
