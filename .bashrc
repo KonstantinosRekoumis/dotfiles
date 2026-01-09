@@ -24,9 +24,3 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-
-alias enable_oneApi='source /opt/intel/oneapi/setvars.sh; FC=mpiifx; CC=mpiicx; CXX=mpiicx; I_MPI_F90=ifx; I_MPI_CC=icx; I_MPI_CXX=icx'
-alias ansav24='export ANSA_SRV=36007@pii.naval.ntua.gr; ~/BETA_CAE_Systems/ansa_v24.0.0/ansa64.sh'
-alias metav24='export ANSA_SRV=36007@pii.naval.ntua.gr; ~/BETA_CAE_Systems/meta_post_v24.0.0/meta_post64.sh'
-
-
