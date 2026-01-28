@@ -14,7 +14,7 @@ keybind = ctrl+shift+K=goto_split:up
 
 
 
-background-opacity = 0.90
+background-opacity = 0.95
 cursor-style = bar
 window-inherit-font-size = true
 window-height = 40
@@ -25,12 +25,12 @@ gtk-single-instance = false
 linux-cgroup = always
 confirm-close-surface = true
 
-theme = dawnfox
-theme = Material Design Colors
+theme = Dawnfox
+#theme = Material Design Colors
 
 theme = Terafox
-theme = Japanesque
+#theme = Japanesque
 #Ultra dim light viable
 #theme = Black Metal (Bathory)
 
-theme = Material Design Colors
+#theme = Material Design Colors
